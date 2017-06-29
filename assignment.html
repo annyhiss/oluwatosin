@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="">
+	<head>
+	 	
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Basic Layout</title>
+
+		<style type="text/css" media="screen">
+			*{
+				box-sizing: border-box;
+			}
+
+			body{
+				background:grey;
+			
+			}
+
+			header{
+				background: #FFF;
+			}
+
+			nav{
+				height: 100px;
+				padding: 10px 20px;
+			}
+
+			nav ul{
+				margin: 0px;
+				padding: 0px;
+				list-style-type: circle;
+				height: 100%;
+				width: 100%;
+				position: relative;
+			}
+
+			nav ul li{
+				display: inline-block;
+				height: 100%;
+			}
+			nav> ul> li:nth-child(2){
+				position: absolute;
+				right: 0px;
+				top: 0px;
+				width: 50%;
+				text-align:right; 
+
+
+			}
+
+			nav ul li a{
+				display: block;
+				height: 100%;
+				width: 100%;
+
+			}
+
+		
+			}
+			nav> ul> li:nth-child(2) > ul> li> a{
+				padding-top: 25px;
+
+			}
+			.project_header{
+				
+				font-size: 44px;
+				font-style: italic;
+				font-weight: bold;
+
+
+			}
+			.project_intro{
+				text-align: justify;
+			}
+			ul:after, ul:before{
+				display:table;
+				content: '';
+				clear: both;
+			}
+			.project_list{
+				width: 80%;
+				margin: 0 auto;
+
+
+
+			}
+			.class{
+				background: white;
+				margin-bottom: 20px;
+			}
+			.class_title{
+				text-align: center;
+			}
+			.card_body img{
+				width: 100%;
+				height: 100%;
+			}
+			.projects_list ul {
+				list-style-type: none;
+			}
+
+			.projects_list ul li{
+				width: calc(100%/2);
+				float: left;
+				padding-right:25px;
+
+			}
+				.projects_list ul li:last-of-type{
+				padding-right: 0px;
+				}
+				.social {
+					 float: right;
+					list-style-type: none;
+				}
+				h1{
+					background: #eefffe;
+					text-align: center;
+
+				}
+				
+			
+				
+				
+
+			
+		</style>
+
+		
+	</head>
+	<body>
+		<!-- header stays here -->
+<header>
+			
+</header>
+		<!-- header ends here -->
+
+
+		<!-- main section starts here -->
+		<section>
+			<div class="projects">
+				<h2 class="project_header"><i>MOUNTAINS recent work</i></h2>
+				<p class="project_intro" style="font-size: 25px;font-style: italic; font-weight:50%">A mountain is a landform that rises prominently above its surroundings. It is generally distinguished by steep slopes, a relatively confined summit, and considerable height. The term mountain has topographic and geologic meanings. It generally refers to rises over 2,000 feet (610 meters).
+
+Compared to a hill, a mountain is defined by its greater height and volume. A plateau is distinguished by its flat surface and a mountain by its greatly irregular surface. Most mountains are peaked, but many have flat tops. Mount Everest, which borders China and India, is the highest peak in the world, towering 29,035 feet (8,850 meters) above sea level.
+
+Altimetry is the measurement of altitude, or elevation above sea level. Mountain altitudes can be measured by an aneroid barometer designed to register changes in atmospheric pressure accompanying changes in altitude, by radar altimetry, or by the traditional triangulation survey of points of known altitudes. Modern satellites make it possible to determine the elevation of any remote peak on Earth. (See also barometer).</p>
+			</div>
+
+			<div class="projects_list">
+
+				<ul>
+				    <li>
+				    	<!-- card stays -->
+				    	<div class="card">
+				    		<div class="card_head">
+				    			<h1 class="card_title">mountain1</h1>
+				    		</div>
+				    		<div class="card_body">
+				    			<div class="image_container">
+				    				<img src="Mountain Forest wallpaper.jpg" alt="">
+				    			</div>
+				    			<span class="title"><i><b>forest side mountain</b></i></span>
+				    		</div>
+				    	</div>
+				    	
+				    </li>
+
+
+				    <li>
+				    	<div class="card">
+				    		<div class="card_head">
+				    			<h1 class="card_title">mountain2</h1>
+				    		</div>
+				    		<div class="card_body">
+				    			<div class="image_container">
+				    				<img src="m2.jpg" alt="">
+				    			</div>
+				    			<span class="title"><b><i>lake side mountain</i></b></span>
+				    		</div>
+				    	</div>
+				    </li>
+				    <li>
+				    
+				    	
+				       <li>
+				    	<!-- card stays -->
+				    	<div class="card">
+				    		<div class="card_head">
+				    			<h1 class="card_title">mountain3</h1>
+				    		</div>
+				    		<div class="card_body">
+				    			<div class="image_container">
+				    				<img src="m3.jpg" alt="">
+				    			</div>
+				    			<span class="title"><i><b>river side mountain</b></i></span>
+				    		</div>
+				    	</div>
+				    	
+				    </li>
+
+
+				    <li>
+				    	<div class="card">
+				    		<div class="card_head">
+				    			<h1 class="card_title">mountain4</h1>
+				    		</div>
+				    		<div class="card_body">
+				    			<div class="image_container">
+				    				<img src="m4.jpg" alt="">
+				    			</div>
+				    			<span class="title"><b><i>snowny mountain</i></b></span>
+				    		</div>
+				    	</div>
+				    </li>
+				    <li>
+				    
+
+				
+				</ul>
+			</div>
+
+		</section>
+		<!-- main section ends here -->
+
+		<!-- page footer -->
+		
+			
+ <footer style="font-size: 30px">&copy 2015-2017|mountains| 
+			<img src="">
+			<img src="">
+			<img src="">
+		
+	   </footer>
+			
+			
+		
+		<!-- page footer ends -->
+
+		
+	</body>
+</html>
